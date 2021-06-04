@@ -4,7 +4,7 @@
 #include <cmath>
 
 MagoSlytherin::MagoSlytherin() : Mago(2){
-	srand(time(NULL));
+	
 	astucia = 80 + rand() % (20);
 	liderazgo = 80 + rand() % (20);
 }

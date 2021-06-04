@@ -4,7 +4,7 @@
 #include <cmath>
 
 MagoRavenclaw::MagoRavenclaw() : Mago(4){
-	srand(time(NULL));
+
 	inteligencia = 80 + rand() % (20);
 	creatividad = 80 + rand() % (20);
 }

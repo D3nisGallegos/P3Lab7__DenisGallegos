@@ -24,6 +24,7 @@ class ClaseHogwarts{
 		int GETpromocion();
 		void SETpromocion(int );
 		void promediohabilidades();
+		void imprimirporcasa();
 		
 		~ClaseHogwarts();
 };

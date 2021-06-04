@@ -4,7 +4,7 @@
 #include <cmath>
 
 Mago::Mago(int validador){
-	srand(time(NULL));
+	//srand(time(NULL));
 	if (validador == 1){   //GRYFFINDOR
 		astucia = 1 + rand() % (99);
 		inteligencia = 1 + rand() % (99);
