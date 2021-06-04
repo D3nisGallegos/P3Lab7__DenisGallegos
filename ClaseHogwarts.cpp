@@ -23,7 +23,7 @@ void ClaseHogwarts :: SETpromocion(int x){
 	promocion = x;
 }
 
-int ClaseHogwarts :: promediohabilidades(){
+void ClaseHogwarts :: promediohabilidades(){
 	cout << "Promedio de habilidades de Gryffindor: " <<endl; 
 	int promastucia = 0; 
 	int prominteligencia = 0; 
@@ -47,12 +47,14 @@ int ClaseHogwarts :: promediohabilidades(){
 	cout << "Lealtad: " << promlealtad / magos1.size() <<endl;
 	cout << "Valentia: " << promvalentia / magos1.size() <<endl;
 	cout << "Atrevimiento: " << promatrevimiento / magos1.size() <<endl;
+	
+	cout << "Promedio de habilidades de Slytherin: " <<endl; 
 	promastucia = 0; 
 	prominteligencia = 0; 
 	promlealtad = 0; 
 	promvalentia = 0;
 	for (int c = 0; c < magos2.size();c++){
-		MagoSlytherin* magotemp = dynamic_cast<MagoSlytherin*>(magos1 [c]);
+		MagoSlytherin* magotemp = dynamic_cast<MagoSlytherin*>(magos2 [c]);
 		promastucia += magotemp->GETastucia();
 		prominteligencia += magotemp->GETinteligencia();
 		promlealtad += magotemp->GETlealtad();
@@ -63,7 +65,46 @@ int ClaseHogwarts :: promediohabilidades(){
 	cout << "Inteligencia: " << prominteligencia / magos2.size() <<endl;
 	cout << "Lealtad: " << promlealtad / magos2.size() <<endl;
 	cout << "Valentia: " << promvalentia / magos2.size() <<endl;
-	cout << "Atrevimiento: " << promliderazgo / magos2.size() <<endl;
+	cout << "Liderazgo: " << promliderazgo / magos2.size() <<endl;
+	
+	cout << "Promedio de habilidades de Hufflepuff: " <<endl; 
+	promastucia = 0; 
+	prominteligencia = 0; 
+	promlealtad = 0; 
+	promvalentia = 0;
+	for (int c = 0; c < magos3.size();c++){
+		MagoHufflepuff* magotemp = dynamic_cast<MagoHufflepuff*>(magos3 [c]);
+		promastucia += magotemp->GETastucia();
+		prominteligencia += magotemp->GETinteligencia();
+		promlealtad += magotemp->GETlealtad();
+		promvalentia += magotemp->GETvalentia();
+		prompaciencia += magotemp->GETpaciencia();
+	}
+	cout << "Astucia: " << promastucia / magos3.size() <<endl;
+	cout << "Inteligencia: " << prominteligencia / magos3.size() <<endl;
+	cout << "Lealtad: " << promlealtad / magos3.size() <<endl;
+	cout << "Valentia: " << promvalentia / magos3.size() <<endl;
+	cout << "Paciencia: " << prompaciencia / magos3.size() <<endl;
+	
+	cout << "Promedio de habilidades de RavenClaw: " <<endl; 
+	promastucia = 0; 
+	prominteligencia = 0; 
+	promlealtad = 0; 
+	promvalentia = 0;
+	for (int c = 0; c < magos4.size();c++){
+		MagoRavenclaw* magotemp = dynamic_cast<MagoRavenclaw*>(magos4 [c]);
+		promastucia += magotemp->GETastucia();
+		prominteligencia += magotemp->GETinteligencia();
+		promlealtad += magotemp->GETlealtad();
+		promvalentia += magotemp->GETvalentia();
+		promcreatividad += magotemp->GETcreatividad();
+	}
+	cout << "Astucia: " << promastucia / magos4.size() <<endl;
+	cout << "Inteligencia: " << prominteligencia / magos4.size() <<endl;
+	cout << "Lealtad: " << promlealtad / magos4.size() <<endl;
+	cout << "Valentia: " << promvalentia / magos4.size() <<endl;
+	cout << "Creatividad: " << promcreatividad / magos4.size() <<endl;
+	
 }
 
 ClaseHogwarts::~ClaseHogwarts(){

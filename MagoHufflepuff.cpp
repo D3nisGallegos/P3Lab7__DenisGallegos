@@ -16,3 +16,8 @@ int MagoHufflepuff :: GETpaciencia(){
 void MagoHufflepuff :: SETpaciencia(int x){
 	paciencia = x;
 }
+
+string MagoHufflepuff :: toString(){
+	return "Astucia: "+to_string(astucia)+" Inteligencia: "+to_string(inteligencia)+" Lealtad: "+to_string(lealtad)
+	+" Valentia: "+to_string(valentia)+" Paciencia: "+to_string(paciencia);
+}

@@ -17,3 +17,8 @@ int MagoGryffindor :: GETatrevimiento(){
 void MagoGryffindor :: SETatrevimiento(int x){
 	atrevimineto = x;
 }
+
+string MagoGryffindor :: toString(){
+	return "Astucia: "+to_string(astucia)+" Inteligencia: "+to_string(inteligencia)+" Lealtad: "+to_string(lealtad)
+	+" Valentia: "+to_string(valentia)+" Atrevimiento: "+to_string(atrevimineto);
+}

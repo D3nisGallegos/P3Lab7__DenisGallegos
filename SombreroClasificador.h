@@ -17,7 +17,7 @@ class SombreroClasificador{
 	
 	public:
 		SombreroClasificador();
-		ClaseHogwarts clasificar(vector <Mago*>, int);
+		ClaseHogwarts* clasificar(vector <Mago*>, int);
 		~SombreroClasificador();
 };
 

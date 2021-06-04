@@ -23,7 +23,7 @@ class ClaseHogwarts{
 		ClaseHogwarts(vector <MagoGryffindor*>, vector <MagoSlytherin*>, vector <MagoHufflepuff*>, vector <MagoRavenclaw*>, int );
 		int GETpromocion();
 		void SETpromocion(int );
-		int promediohabilidades();
+		void promediohabilidades();
 		
 		~ClaseHogwarts();
 };

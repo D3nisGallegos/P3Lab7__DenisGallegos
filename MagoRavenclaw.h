@@ -1,7 +1,9 @@
 #ifndef MAGORAVENCLAW_H
 #define MAGORAVENCLAW_H
-
+#include <string>
 #include "Mago.h"
+
+using namespace std; 
 
 class MagoRavenclaw : public Mago{
 	
@@ -12,6 +14,7 @@ class MagoRavenclaw : public Mago{
 		MagoRavenclaw();
 		int GETcreatividad();
 		void SETcreatividad(int );
+		string toString();
 };
 
 #endif

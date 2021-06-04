@@ -55,3 +55,7 @@ void Mago :: SETlealtad(int x){
 void Mago :: SETvalentia(int x){
 	valentia = x; 
 }
+
+string Mago :: toString(){
+	return "";
+}

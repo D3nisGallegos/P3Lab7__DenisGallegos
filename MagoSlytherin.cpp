@@ -16,3 +16,8 @@ int MagoSlytherin :: GETliderazgo(){
 void MagoSlytherin :: SETliderazgo(int x){
 	liderazgo = x;
 }
+
+string MagoSlytherin :: toString(){
+	return "Astucia: "+to_string(astucia)+" Inteligencia: "+to_string(inteligencia)+" Lealtad: "+to_string(lealtad)
+	+" Valentia: "+to_string(valentia)+" Liderazgo: "+to_string(liderazgo);
+}

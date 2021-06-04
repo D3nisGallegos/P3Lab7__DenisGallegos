@@ -1,5 +1,8 @@
 #ifndef MAGO_H
 #define MAGO_H
+#include <string>
+
+using namespace std; 
 
 class Mago{
 	
@@ -19,6 +22,7 @@ class Mago{
 		void SETinteligencia(int);
 		void SETlealtad(int);
 		void SETvalentia(int);
+		virtual string toString();
 };
 
 #endif

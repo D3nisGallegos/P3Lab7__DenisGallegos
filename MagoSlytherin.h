@@ -1,7 +1,9 @@
 #ifndef MAGOSLYTHERIN_H
 #define MAGOSLYTHERIN_H
-
+#include <string>
 #include "Mago.h"
+
+using namespace std; 
 
 class MagoSlytherin : public Mago{
 	
@@ -13,6 +15,7 @@ class MagoSlytherin : public Mago{
 		MagoSlytherin();
 		int GETliderazgo();
 		void SETliderazgo(int );
+		virtual string toString();
 };
 
 #endif
