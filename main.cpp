@@ -70,7 +70,10 @@ int main(int argc, char** argv) {
 		opcion = menu(); 
 	}//Fin del while. 
 	
-	
+	for (int c =0; c < magosgenerados.size();c++){
+		delete magosgenerados [c];
+	}
+	magosgenerados.clear();
 	return 0;
 }
 
